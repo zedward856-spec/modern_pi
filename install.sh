@@ -14,6 +14,8 @@ mkdir -p ~/.config/wf-panel-pi
 mkdir -p ~/.config/openbox
 mkdir -p ~/.config/pcmanfm
 mkdir -p ~/.config/labwc
+mkdir -p ~/.config/gtk-3.0
+mkdir -p ~/.config/xsettingsd
 mkdir -p ~/.local/bin
 mkdir -p ~/.local/share/icons/Papirus
 mkdir -p ~/.icons/Papirus
@@ -26,6 +28,8 @@ cp -r config/wf-panel-pi/* ~/.config/wf-panel-pi/ 2>/dev/null
 cp config/openbox/rc.xml ~/.config/openbox/rc.xml 2>/dev/null
 cp -r config/pcmanfm/* ~/.config/pcmanfm/ 2>/dev/null
 cp -r config/labwc/* ~/.config/labwc/ 2>/dev/null
+cp -r config/gtk-3.0/* ~/.config/gtk-3.0/ 2>/dev/null
+cp -r config/xsettingsd/* ~/.config/xsettingsd/ 2>/dev/null
 cp -r local/share/icons/Papirus/* ~/.local/share/icons/Papirus/ 2>/dev/null
 cp -r icons/Papirus/* ~/.icons/Papirus/ 2>/dev/null
 cp -r bin/* ~/.local/bin/ 2>/dev/null
