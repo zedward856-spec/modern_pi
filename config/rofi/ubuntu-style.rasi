@@ -1,0 +1,98 @@
+configuration {
+    show-icons: true;
+    drun-display-format: "{name}";
+    disable-history: false;
+    hide-scrollbar: true;
+    sidebar-mode: false;
+    hover-select: true;
+    me-select-entry: "MousePrimary";
+    me-accept-entry: "!MousePrimary";
+}
+
+* {
+    background-color: transparent;
+    text-color: #f7f7f7;
+    font: "Nunito Sans 13";
+}
+
+window {
+    anchor: center;
+    location: center;
+    width: 820px;
+    height: 520px;
+    background-color: #12121480; /* 50% opacity */
+    border: 2px;
+    border-color: #820014; /* Arasaka Red outline */
+    border-radius: 16px; /* Rounded corners */
+    transparency: "real";
+    fullscreen: false;
+    padding: 30px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 20px;
+}
+
+inputbar {
+    background-color: #1a1a1f;
+    border-color: #ffffff26;
+    border: 2px;
+    border-radius: 24px;
+    padding: 12px 24px;
+    margin: 0px 0px 10px 0px;
+    children: [ entry ];
+    spacing: 10px;
+}
+
+entry {
+    placeholder: "Type to search...";
+    placeholder-color: #b3b3b3;
+    text-color: #f7f7f7;
+    font: "Nunito Sans 14";
+}
+
+listview {
+    columns: 5;
+    lines: 3;
+    spacing: 15px;
+    cycle: false;
+    dynamic: true;
+    scrollbar: false;
+}
+
+element {
+    orientation: vertical;
+    padding: 16px 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #f7f7f7;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: #f7f7f7;
+}
+
+element selected.normal {
+    background-color: #820014;
+    text-color: #ffffff;
+}
+
+element-icon {
+    size: 64px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    margin: 10px 0px 0px 0px;
+    text-color: inherit;
+    font: "Nunito Sans Medium 12";
+}

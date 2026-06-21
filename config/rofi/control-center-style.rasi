@@ -1,0 +1,74 @@
+configuration {
+    show-icons: true;
+    hover-select: true;
+    me-select-entry: "MousePrimary";
+    me-accept-entry: "!MousePrimary";
+}
+
+* {
+    background-color: transparent;
+    text-color: #f7f7f7;
+    font: "Noto Sans Mono 12";
+}
+
+window {
+    anchor: south east;
+    location: south east;
+    x-offset: -12px;
+    y-offset: -55px; /* Sits right above the bottom taskbar */
+    width: 380px;
+    height: 300px;
+    background-color: #12121480; /* 50% opacity */
+    border: 2px;
+    border-color: #820014; /* Arasaka Red outline */
+    border-radius: 16px;
+    transparency: "real";
+    fullscreen: false;
+    padding: 15px;
+}
+
+mainbox {
+    children: [ listview ];
+}
+
+listview {
+    columns: 1;
+    lines: 5;
+    spacing: 8px;
+    cycle: false;
+    dynamic: true;
+    scrollbar: false;
+}
+
+element {
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: #f7f7f7;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: #f7f7f7;
+}
+
+element selected.normal {
+    background-color: #820014;
+    text-color: #ffffff;
+}
+
+element-icon {
+    size: 24px;
+    vertical-align: 0.5;
+    margin: 0 12px 0 0;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: inherit;
+    font: "Noto Sans Mono Medium 12";
+}
