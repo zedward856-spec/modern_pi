@@ -1,6 +1,6 @@
 # Modern Pi Desktop Restoration
 
-![Desktop Preview](Pictures/wp10211536-arasaka-wallpapers.png)
+![App Preview](Pictures/screenshot.png)
 
 This repository contains a complete backup of custom configurations, dotfiles, and scripts designed to transform the default Raspberry Pi OS desktop into a beautiful, modern, and highly functional experience.
 
