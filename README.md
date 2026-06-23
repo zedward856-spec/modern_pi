@@ -18,6 +18,17 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## 📸 Creating a Snapshot
+If you make changes to your live system (like tweaking Rofi, Openbox, or the panel) and want to save them, you can take a snapshot. This script automatically copies your active system configurations back into this repository.
+
+```bash
+cd ~/pi-backup
+./snapshot.sh
+git add .
+git commit -m "System snapshot update"
+git push
+```
+
 ## 📂 Repository Structure
 * `bin/` - Custom Python and shell scripts (including `rofi-control-center.py`).
 * `config/` - Configuration files for Rofi, Wayfire panel (`wf-panel-pi`), Openbox, Labwc, PCManFM, GTK 3.0, and `xsettingsd`.
