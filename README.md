@@ -1,5 +1,7 @@
 # Modern Pi Desktop Restoration
 
+![Desktop Preview](Pictures/wp10211536-arasaka-wallpapers.png)
+
 This repository contains a complete backup of custom configurations, dotfiles, and scripts designed to transform the default Raspberry Pi OS desktop into a beautiful, modern, and highly functional experience.
 
 ## ✨ Features
@@ -18,16 +20,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-## 📸 Creating a Snapshot
-If you make changes to your live system (like tweaking Rofi, Openbox, or the panel) and want to save them, you can take a snapshot. This script automatically copies your active system configurations back into this repository.
-
-```bash
-cd ~/pi-backup
-./snapshot.sh
-git add .
-git commit -m "System snapshot update"
-git push
-```
 
 ## 📂 Repository Structure
 * `bin/` - Custom Python and shell scripts (including `rofi-control-center.py`).
