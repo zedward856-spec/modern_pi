@@ -18,8 +18,8 @@ configuration {
 window {
     anchor: center;
     location: center;
-    width: 820px;
-    height: 520px;
+    width: 1000px;
+    height: 700px;
     background-color: #12121480; /* 50% opacity */
     border: 2px;
     border-color: #820014; /* Arasaka Red outline */
@@ -84,7 +84,7 @@ element selected.normal {
 }
 
 element-icon {
-    size: 64px;
+    size: 77px;
     horizontal-align: 0.5;
     vertical-align: 0.5;
 }
@@ -94,5 +94,5 @@ element-text {
     vertical-align: 0.5;
     margin: 10px 0px 0px 0px;
     text-color: inherit;
-    font: "Nunito Sans Medium 12";
+    font: "Nunito Sans Medium 16";
 }
